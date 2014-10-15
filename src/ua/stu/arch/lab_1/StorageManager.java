@@ -37,7 +37,7 @@ public class StorageManager<T> {
 	@SuppressWarnings("unchecked")
 	public List<T> getList() {
 		FileInputStream fis;
-        ObjectInputStream is;
+		ObjectInputStream is;
 		try {
 			fis = context.openFileInput(FILE_NAME);
 			is = new ObjectInputStream(fis);
