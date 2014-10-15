@@ -41,9 +41,9 @@ public class StorageManager<T> {
 		try {
 			fis = context.openFileInput(FILE_NAME);
 			is = new ObjectInputStream(fis);
-		    List<T> list = (List<T>) is.readObject();
-	        is.close();
-	        return list;
+			List<T> list = (List<T>) is.readObject();
+			is.close();
+			return list;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
